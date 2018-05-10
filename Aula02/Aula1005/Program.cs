@@ -10,7 +10,7 @@ namespace Aula1005
     {
         static void Main(string[] args)
         {
-            Cliente cli = new Aula1005.Cliente();
+            Cliente cli = new Cliente();
             cli.Nome = "Conrado"; //set
             string nomeCliente = cli.Nome; //get
 
@@ -19,6 +19,11 @@ namespace Aula1005
 
             Console.WriteLine(cli.Nome);
             Console.WriteLine(cli.Cpf);
+
+            //Utilizando os contrutores parametrizados
+            Cliente cli2 = new Cliente("Yangre"); //nome
+            Cliente cli3 = new Cliente("Lelinho", "123"); //nome, cpf
+
 
             Console.ReadKey();
         }
