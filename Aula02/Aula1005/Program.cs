@@ -10,6 +10,17 @@ namespace Aula1005
     {
         static void Main(string[] args)
         {
+            Cliente cli = new Aula1005.Cliente();
+            cli.Nome = "Conrado"; //set
+            string nomeCliente = cli.Nome; //get
+
+            cli.Cpf = "12345678901"; //set
+            string cpfCliente = cli.Cpf; //get
+
+            Console.WriteLine(cli.Nome);
+            Console.WriteLine(cli.Cpf);
+
+            Console.ReadKey();
         }
     }
 }
