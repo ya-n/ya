@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula1005
+namespace Aula1405
 {
     class Cliente : Pessoa
     {
-        public DateTime DataNasc { get; set;}
+
+        public DateTime DataNasc { get; set; }
 
         public string DataQueNasceu
         {
@@ -22,7 +23,7 @@ namespace Aula1005
         {
             get
             {
-                //DateTime.Today = hoje;
+                return DateTime.Today.Year - DataNasc.Year;
             }
         }
 
@@ -30,15 +31,24 @@ namespace Aula1005
         {
 
         }
+
         public Cliente(string nome) : base(nome)
         {
 
         }
 
-        public Cliente(string nome, string cpf) : base(nome, cpf)
+        public Cliente(string nome, string cpf) :
+            base(nome, cpf)
         {
 
         }
+        override
+            public string ImprimirInfo()
+        {
+            return Nome + ", " + Cpf + ", " + DataNasc.ToShortDateString() + ", "
+                + Idade;
 
+        }
     }
 }
+

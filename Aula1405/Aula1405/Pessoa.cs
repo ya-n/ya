@@ -1,11 +1,17 @@
-﻿namespace Aula1005
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aula1405
 {
-    class Pessoa
+    public abstract class Pessoa
     {
-        //Atributo
+        // Atributo
         private string nome;
 
-        //Propriedade
+        // Propriedades
         public string Nome
         {
             get
@@ -21,8 +27,8 @@
 
         public string Cpf { get; set; }
 
-        //Construtores
-        public Pessoa() //Construtor vazio
+        // Construtores
+        public Pessoa() // Construtor vazio
         {
 
         }

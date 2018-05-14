@@ -22,7 +22,15 @@ namespace Aula1005
 
             //Utilizando os contrutores parametrizados
             Cliente cli2 = new Cliente("Yangre"); //nome
-            Cliente cli3 = new Cliente("Lelinho", "123"); //nome, cpf
+            Console.WriteLine("cli2.Nome: " + cli2.Nome);
+            Cliente cli3 = new Cliente("Chiquinho", "123"); //nome, cpf
+
+            cli3.DataNasc = new DateTime(1950,05,05);
+            Console.WriteLine(cli3.Nome + " nasceu em " + cli3.DataNasc);
+            Console.WriteLine(cli3.Nome + " nasceu em " + cli3.DataQueNasceu);
+            Console.WriteLine(cli3.Nome + " tem " + cli3.Idade + " anos ");
+
+            //Pessoa p = new Pessoa(); //ERRO: classe
 
 
             Console.ReadKey();
